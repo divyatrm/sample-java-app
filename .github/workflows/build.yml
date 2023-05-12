@@ -1,7 +1,7 @@
 name: Main Workflow
 on:
   push:
-    branches:
+    branches:  
       - master
     paths:
       - sample-java-app
