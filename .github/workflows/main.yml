@@ -2,7 +2,7 @@ name: Main Workflow
 on:
   push:
     branches:
-      - master
+      - master 
 jobs:
   build:   
      uses: divyatrm/pipeline/.github/workflows/main.yml@main
