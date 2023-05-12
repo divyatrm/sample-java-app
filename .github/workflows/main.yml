@@ -1,9 +1,6 @@
 name: Main Workflow
 on:
-  workflow_call:
-  push:
-    branches:
-    - master    
+  workflow_call:   
 jobs:
  _:
    uses: divyatrm/pipeline/.github/workflows/main.yml@main
