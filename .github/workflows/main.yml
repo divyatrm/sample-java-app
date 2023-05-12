@@ -1,5 +1,8 @@
 name: Main Workflow
 on:
+  push:
+    branches:
+    - master    
   workflow_call:
 jobs:
  _:
