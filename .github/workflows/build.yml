@@ -6,6 +6,6 @@ on:
     paths:
       - sample-java-app
       - sample-app-2 
-jobs:
+jobs:        
   build:
      uses: divyatrm/pipeline/.github/workflows/build.yml@main
