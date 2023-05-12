@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - sample-java-app
+      - sample-app-2 
   workflow_dispatch:
 jobs:
   build:
