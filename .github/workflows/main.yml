@@ -1,4 +1,4 @@
-name: Workflow
+name: Monitor Repository
 on:
   push:
     branches:
