@@ -4,10 +4,5 @@ on:
     branches:
       - master
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Build and test code   
-        uses: divyatrm/pipeline/.github/workflows/main.yml@main
+  build:   
+     uses: divyatrm/pipeline/.github/workflows/main.yml@main
