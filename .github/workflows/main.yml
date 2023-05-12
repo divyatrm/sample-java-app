@@ -1,0 +1,24 @@
+name: Cross-Repo Build Workflow
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'sample-java-app'
+      - 'simple-java-maven-app'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo 1
+        uses: actions/checkout@v2
+        with:
+          repository: divyatr/sample-java-app
+      - name: Checkout Repo 2
+        uses: actions/checkout@v2
+        with:
+          repository: divyatr/simple-java-maven-app
+      - name: Build
+        run: |
+          echo $GITHUB_REPOSITORY
+          mvn clean install
